@@ -1,0 +1,34 @@
+<div class="container">
+        <table class="table table-striped table-hover">
+            <thead class="thaed thead-dark">
+                <th>Id</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Edit/Remove</th>
+                <th>Degree</th>
+                <th>Marks</th>
+                <th>College</th>
+                <th>Stream</th>
+                <th>Edit/Remove</th>
+            </thead>
+            <tbody *ngFor="let arr1 of array1, let arr2 of array2, let i = index">
+                <td>{{arr1.id + 1}}</td>
+                <td>{{arr1.name}}</td>
+                <td>{{arr1.dob}}</td>
+                <td>{{arr1.address}}</td>
+                <td>{{arr1.phone}}</td>
+                <td><a routerLink="edit/{{arr1.id}}" class="btn btn-warning">Edit</a>&nbsp;<a
+                        class="btn btn-danger" (click)="remv(i)">Remove</a>&nbsp;<a class="btn btn-primary"></a>
+                </td>
+                <td>{{arr2.degree}}</td>
+                <td>{{arr2.marks}}</td>
+                <td>{{arr2.college}}</td>
+                <td>{{arr2.stream}}</td>
+                <td><a routerLink="edit/{{arr1.id}}" class="btn btn-warning">Edit</a>&nbsp;<a
+                    class="btn btn-danger" (click)="remv(i)">Remove</a>&nbsp;<a class="btn btn-primary"></a>
+                </td>
+            </tbody>
+        </table>
+    </div>

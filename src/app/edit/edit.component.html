@@ -1,0 +1,47 @@
+<div class="container">
+
+    <form class="col-md-6" (ngSubmit)="editPersonal()">
+        <div class="form-group">
+            <h2>Edit {{person.name}}</h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Name</label>
+            <input placeholder="Name" class="form-control" type="text" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="my-input">DOB</label>
+            <input placeholder="DOB" class="form-control" type="date" name="dob" [(ngModel)]="dob">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Address</label>
+            <input placeholder="Address" class="form-control" type="text" name="address" [(ngModel)]="address">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Phone</label>
+            <input placeholder="Phone" class="form-control" type="number" name="phone" [(ngModel)]="phone">
+        </div>
+        <button class="btn btn-primary" type="submit">Edit Personal Info</button>
+    </form>
+    <form class="col-md-6" (ngSubmit)="editEducational()">
+        <div class="form-group">
+            <h2>Edit {{education.name}}</h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Degree</label>
+            <input placeholder="Degree" class="form-control" type="text" name="degree" [(ngModel)]="degree">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Marks</label>
+            <input placeholder="Marks" class="form-control" type="text" name="marks" [(ngModel)]="marks">
+        </div>
+        <div class="form-group">
+            <label for="my-input">College</label>
+            <input placeholder="College" class="form-control" type="text" name="college" [(ngModel)]="college">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Stream</label>
+            <input placeholder="Stream" class="form-control" type="text" name="stream" [(ngModel)]="stream">
+        </div>
+        <button class="btn btn-primary" type="submit">Edit Educational Info</button>
+    </form>
+</div>
